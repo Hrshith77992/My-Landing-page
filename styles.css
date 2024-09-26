@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+  }
+/* Custom Scroll Bar CSS */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #124E66;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #748D92;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #212A31;
+    color: #141111;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+.logo .img{
+    height: 50px;
+    width: 50px;
+    display: flex;
+
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #D3D9D4;
+    text-decoration: none;
+}
+
+.hero {
+    height: 100vh;
+  width: 100%;
+  background: url("Background.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    padding: 60px 20px;
+}
+.hero .right{
+    position: absolute;
+    top: 240px;    /* Moves the image 50px from the top of the parent container */
+    left: 280px;
+   
+}
+.hero .right img{
+    width: 900px;
+    height: 605px;
+    
+}
+.hero .left img{
+    height: 80px;
+    width: 280px;
+}
+.hero .left{
+    position: absolute;
+    top: 150px;    /* Moves the image 50px from the top of the parent container */
+    left: 15px;
+    height: 25px;
+    width: 30px;
+}
+
+.hero h1 {
+    position: relative;;
+            top: 13px;
+            left: 550px;
+            font-size: 24px;
+    margin-bottom: 10px;
+    color: #D3D9D4;
+
+}
+.hero p{
+    font-style: italic;
+    color: #D3D9D4;
+    margin-top: 10px;
+    position: relative;
+            top: 50px;
+            left: 30px;
+            font-size: 24px;
+    
+}
+
+.cta-button {
+    background-color: #748D92;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#features, #about, footer {
+    padding: 40px 20px;
+    text-align: center;
+}
+section {
+    background-color: #124E66;
+}
+
+.feature {
+    margin: 20px 0;
+   
+}
+.image-grid{
+    background-color: #2E3944;
+}
+.image-row {
+    justify-content: center; 
+    grid-template-columns: repeat(3, 1fr); /* Two equal columns per row */
+    gap: 20px; /* Space between grid items */         /* Aligns the blocks in a row */
+    /* Space between the blocks */
+    margin-bottom: 20px;    /* Add space between each row */
+}
+
+.image-block {
+               /* Each block takes 48% of the row (leaving space for gap) */
+    text-align: center; 
+    margin-left: 60px;  
+    margin-top: 15px;
+    margin-bottom: 30px;  /* Center the text and image */
+}
+.image-block p{
+color: #D3D9D4;
+}
+
+.image-block img {
+    width: 100%;       /* Make the image take full width of its block */
+    height: auto;      /* Maintain aspect ratio */
+    object-fit: cover; /* Maintain aspect ratio while filling the block */
+}
+
+.image-text {
+    margin-top: 10px;       /* Space between image and text */
+    font-size: 16px;        /* Adjust font size */
+    color: #333;            /* Text color */
+}
+
+@media (max-width: 800px) {
+    .image-grid {
+        grid-template-columns: 1fr; /* Stack the blocks vertically on smaller screens */
+        margin-left: 30px;
+    }
+
+    .image-block {
+        width: 100%;            /* Make the block full width when stacked */
+        margin-bottom: 20px;    /* Add space between stacked blocks */
+    }
+}
+
+
+
+footer {
+    background-color: #748D92;
+    color: #fff;
+    padding: 20px 0;
+}
+.hero{
+    display: flex;
+}
+.image-grid{
+    display: flex;;
+}
+.image-block .box{
+        display: inline-block; /* Ensures the box fits tightly around the link */
+        padding: 10px; /* Add space inside the box */
+        border: 2px solid #333; /* Creates a solid border around the link */
+        background-color: #D3D9D4; /* Light grey background color */
+        text-decoration: none; /* Removes the default underline from the link */
+        color: black; /* Sets the text color */
+        font-weight: bold; /* Makes the text bold */
+}
+.image-block .box:hover {
+    background-color: #124E66; /* Changes background on hover */
+    border-color: #555; /* Changes border color on hover */
+}
